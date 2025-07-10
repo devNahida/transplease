@@ -1,0 +1,60 @@
+/* Flèches custom */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  background: rgba(255,255,255,0.85);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  color: #1e3a34;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background 0.2s, color 0.2s;
+}
+.carousel-arrow:hover {
+  background: #eab308;
+  color: #fff;
+}
+.carousel-arrow.left-4 { left: 1rem; }
+.carousel-arrow.right-4 { right: 1rem; }
+
+/* Points stylisés */
+.custom-carousel .carousel .control-dots {
+  bottom: 10px;
+}
+.carousel-dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  border: 2px solid #eab308;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+.carousel-dot.selected {
+  background: #eab308;
+  border-color: #1e3a34;
+}
+
+/* Effet zoom sur image active */
+.carousel-image {
+  transition: transform 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+  box-shadow: 0 4px 24px rgba(30,58,52,0.08);
+}
+.carousel .slide.selected .carousel-image,
+.carousel .slide .carousel-image:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 32px rgba(234,179,8,0.18);
+  border: 3px solid #eab308;
+}
+
+@media (max-width: 640px) {
+  .carousel-arrow { width: 32px; height: 32px; font-size: 1.1rem; }
+  .carousel-dot { width: 10px; height: 10px; }
+} 

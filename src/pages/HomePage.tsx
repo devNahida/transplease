@@ -6,6 +6,7 @@ import TestimonialCard from '../components/TestimonialCard';
 import { motion } from 'framer-motion'; // Ajout de framer-motion
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import './HomePageCarousel.css';
 
 interface HomePageProps {
   onNavigate?: (page: Page) => void;
@@ -229,34 +230,62 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               infiniteLoop
               autoPlay
               interval={4000}
-              className="rounded-lg"
+              className="custom-carousel rounded-lg"
+              renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                hasPrev && (
+                  <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow left-4">
+                    &#8592;
+                  </button>
+                )
+              }
+              renderArrowNext={(onClickHandler, hasNext, label) =>
+                hasNext && (
+                  <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow right-4">
+                    &#8594;
+                  </button>
+                )
+              }
+              renderIndicator={(onClickHandler, isSelected, index, label) => (
+                <li
+                  className={
+                    'carousel-dot' + (isSelected ? ' selected' : '')
+                  }
+                  onClick={onClickHandler}
+                  onKeyDown={onClickHandler}
+                  value={index}
+                  key={index}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`${label} ${index + 1}`}
+                />
+              )}
             >
               <div>
-                <img src="/images/galery1.jpeg" alt="Galerie 1" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery1.jpeg" alt="Galerie 1" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark carousel-image" />
               </div>
               <div>
-                <img src="/images/galery2.jpeg" alt="Galerie 2" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery2.jpeg" alt="Galerie 2" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark carousel-image" />
               </div>
               <div>
-                <img src="/images/galery3.jpeg" alt="Galerie 3" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery3.jpeg" alt="Galerie 3" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark carousel-image" />
               </div>
               <div>
-                <img src="/images/galery4.jpeg" alt="Galerie 4" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery4.jpeg" alt="Galerie 4" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark carousel-image" />
               </div>
               <div>
-                <img src="/images/galery5.jpeg" alt="Galerie 5" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery5.jpeg" alt="Galerie 5" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark carousel-image" />
               </div>
               <div>
-                <img src="/images/galery6.jpeg" alt="Galerie 6" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery6.jpeg" alt="Galerie 6" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark carousel-image" />
               </div>
               <div>
-                <img src="/images/galery7.jpeg" alt="Galerie 7" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery7.jpeg" alt="Galerie 7" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark carousel-image" />
               </div>
               <div>
-                <img src="/images/galery8.jpeg" alt="Galerie 8" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery8.jpeg" alt="Galerie 8" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark carousel-image" />
               </div>
               <div>
-                <img src="/images/galery9.jpeg" alt="Galerie 9" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery9.jpeg" alt="Galerie 9" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark carousel-image" />
               </div>
             </Carousel>
           </div>
