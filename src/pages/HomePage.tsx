@@ -206,11 +206,11 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             <p className="text-lg text-gray-600 dark:text-text-grey max-w-2xl mx-auto">Ils nous font confiance</p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center justify-items-center">
-            <img src="/partenaire/Partenaire1.png" alt="Partenaire 1" className="h-24 object-contain grayscale hover:grayscale-0 transition duration-300" />
-            <img src="/partenaire/Partenaire2.png" alt="Partenaire 2" className="h-24 object-contain grayscale hover:grayscale-0 transition duration-300" />
-            <img src="/partenaire/Partenaire3.png" alt="Partenaire 3" className="h-24 object-contain grayscale hover:grayscale-0 transition duration-300" />
-            <img src="/partenaire/Partenaire4.png" alt="Partenaire 4" className="h-24 object-contain grayscale hover:grayscale-0 transition duration-300" />
-            <img src="/partenaire/Partenaire5.png" alt="Partenaire 5" className="h-24 object-contain grayscale hover:grayscale-0 transition duration-300" />
+            <img src="/partners/Partenaire1.png" alt="Partenaire 1" className="h-24 object-contain grayscale hover:grayscale-0 transition duration-300" />
+            <img src="/partners/Partenaire2.png" alt="Partenaire 2" className="h-24 object-contain grayscale hover:grayscale-0 transition duration-300" />
+            <img src="/partners/Partenaire3.png" alt="Partenaire 3" className="h-24 object-contain grayscale hover:grayscale-0 transition duration-300" />
+            <img src="/partners/Partenaire4.png" alt="Partenaire 4" className="h-24 object-contain grayscale hover:grayscale-0 transition duration-300" />
+            <img src="/partners/Partenaire5.png" alt="Partenaire 5" className="h-24 object-contain grayscale hover:grayscale-0 transition duration-300" />
           </div>
         </div>
       </section>
