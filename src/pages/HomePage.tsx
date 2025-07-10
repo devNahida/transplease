@@ -115,7 +115,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               className="bg-white dark:bg-primary-dark rounded-2xl shadow-xl p-10 hover:shadow-2xl transition-shadow border border-divider-grey flex flex-col h-full transition-colors duration-300 transition-transform hover:scale-105"
             >
               <div className="w-16 h-16 bg-accent-gold rounded-lg flex items-center justify-center mb-4">
-                <img src="icon/iconeDemenagement.png" alt="Déménagement" className="w-12 h-12 object-cover rounded" />
+                <img src="/icons/iconeDemenagement.png" alt="Déménagement" className="w-12 h-12 object-cover rounded" />
               </div>
               <h3 className="text-xl font-semibold text-primary-dark dark:text-text-light mb-3">Déménagement</h3>
               <p className="text-gray-600 dark:text-text-grey mb-4">Service complet de déménagement avec emballage, transport et installation dans votre nouveau logement.</p>
@@ -134,7 +134,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               className="bg-white dark:bg-primary-dark rounded-2xl shadow-xl p-10 hover:shadow-2xl transition-shadow border border-divider-grey flex flex-col h-full transition-colors duration-300 transition-transform hover:scale-105"
             >
               <div className="w-16 h-16 bg-accent-gold rounded-lg flex items-center justify-center mb-4">
-                <img src="icon/iconePli.png" alt="Envoi de plis" className="w-12 h-12 object-cover rounded" />
+                <img src="/icons/iconePli.png" alt="Envoi de plis" className="w-12 h-12 object-cover rounded" />
               </div>
               <h3 className="text-xl font-semibold text-primary-dark dark:text-text-light mb-3">Envoi de Plis</h3>
               <p className="text-gray-600 dark:text-text-grey mb-4">Transport sécurisé de documents et plis urgents avec suivi en temps réel.</p>
@@ -153,7 +153,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               className="bg-white dark:bg-primary-dark rounded-2xl shadow-xl p-10 hover:shadow-2xl transition-shadow border border-divider-grey flex flex-col h-full transition-colors duration-300 transition-transform hover:scale-105"
             >
               <div className="w-16 h-16 bg-accent-gold rounded-lg flex items-center justify-center mb-4">
-                <img src="icon/iconeLivraison.png" alt="Livraison" className="w-12 h-12 object-cover rounded" />
+                <img src="/icons/iconeLivraison.png" alt="Livraison" className="w-12 h-12 object-cover rounded" />
               </div>
               <h3 className="text-xl font-semibold text-primary-dark dark:text-text-light mb-3">Livraison Express</h3>
               <p className="text-gray-600 dark:text-text-grey mb-4">Livraisons rapides et sécurisées dans toute l'Île-de-France pour particuliers et entreprises.</p>
@@ -232,31 +232,31 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               className="rounded-lg"
             >
               <div>
-                <img src="/galery/galery1.jpeg" alt="Galerie 1" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery1.jpeg" alt="Galerie 1" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
               </div>
               <div>
-                <img src="/galery/galery2.jpeg" alt="Galerie 2" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery2.jpeg" alt="Galerie 2" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
               </div>
               <div>
-                <img src="/galery/galery3.jpeg" alt="Galerie 3" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery3.jpeg" alt="Galerie 3" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
               </div>
               <div>
-                <img src="/galery/galery4.jpeg" alt="Galerie 4" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery4.jpeg" alt="Galerie 4" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
               </div>
               <div>
-                <img src="/galery/galery5.jpeg" alt="Galerie 5" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery5.jpeg" alt="Galerie 5" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
               </div>
               <div>
-                <img src="/galery/galery6.jpeg" alt="Galerie 6" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery6.jpeg" alt="Galerie 6" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
               </div>
               <div>
-                <img src="/galery/galery7.jpeg" alt="Galerie 7" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery7.jpeg" alt="Galerie 7" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
               </div>
               <div>
-                <img src="/galery/galery8.jpeg" alt="Galerie 8" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery8.jpeg" alt="Galerie 8" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
               </div>
               <div>
-                <img src="/galery/galery9.jpeg" alt="Galerie 9" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
+                <img src="/images/galery9.jpeg" alt="Galerie 9" className="object-contain rounded-lg w-full h-72 md:h-96 bg-white dark:bg-primary-dark" />
               </div>
             </Carousel>
           </div>
